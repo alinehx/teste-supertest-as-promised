@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 
 var request = require('supertest-as-promised'),
   assert = require('assert');
@@ -32,7 +32,7 @@ describe('Testando api de previsao', function () {
       assert.strictEqual(res.body.cod, '404', 'Codigo de retorno não é 404');
       assert.strictEqual(res.body.message, 'Error: Not found city', 'Mensagem não é igual a Error: Not found city');
 
-      console.log(res.body);
+      
       done();
     });
   });
